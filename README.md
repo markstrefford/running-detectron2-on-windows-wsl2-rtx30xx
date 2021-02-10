@@ -56,10 +56,24 @@ If you've got this far, then Detectron2 is installed and ready for you to use.
 
 ### Calling Detectron2 from by API
 
-Detectron2, at the time of writing, does not have a native API. This is simple to setup using (Flask)[https://pypi.org/project/Flask/].
+Detectron2, at the time of writing, does not have a native API. This is simple to setup using (Flask)[https://pypi.org/project/Flask/]. You can of course `import detectron2` into your code directly, but if you want to move to an API based approach, here's an example of how to get this working.
+
+*Optional* If you want to run Anaconda in Windows and call Detectron2 in Ubuntu, then you'll need to get the internal IP address of your Ubuntu container using `ipconfig`. On my system, I used the IP address of the `eth0` adapter, which was of the format `172.x.x.x`. 
 
 I've provided an (example script)[https://github.com/markstrefford/running-detectron2-on-windows-wsl2-rtx30xx/blob/main/web-api.py] to get you started. **Note that this isn't production ready, it's purely for development and test purposes. This example code isn't designe to handle multiple concurrent requests, etc.**
 
-To call the API, please see this notebook.
+To call the API, please see this notebook. For information on the output format of the API, please read the (Detectron2 documentation)[https://detectron2.readthedocs.io/en/latest/tutorials/models.html].
 
 You'll notice that these scripts use the (Blosc library)[http://python-blosc.blosc.org/]. This is to facilitate transfering binary (image) data over HTTP inside a JSON request/response.
+
+### Additional useful resources
+
+(How to Run the New StyleGAN2 ADA for PyTorch on Windows without Docker with Ampere/30xx or 20xx)[https://www.youtube.com/watch?v=BCde68k6KXg].
+(Detectron2: The base basic end-to-end tutorial)[https://towardsdatascience.com/detectron2-the-basic-end-to-end-tutorial-5ac90e2f90e3]
+
+### Acknowledgements
+
+Thanks to ... for helping with the WSL2 and CUDA setup.
+
+
+
