@@ -73,7 +73,7 @@ You'll notice that these scripts use the [Blosc library](http://python-blosc.blo
 
 ### Acknowledgements
 
-Thanks to ... for helping with the WSL2 and CUDA setup.
+Thanks to [@b_pronod](https://github.com/b-pronod) for helping with the WSL2 and CUDA setup.
 
 
 
