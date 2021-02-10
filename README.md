@@ -1,4 +1,4 @@
-# How to run Detectron2 on Windows using WSL2 and RTX30xx cards.
+# How to run Detectron2 on Windows using WSL2 and Nvidia RTX30xx GPUs.
 
 Facebook AI Research recently released [Detectron2](https://github.com/facebookresearch/detectron2), their next generation software system that implements state-of-the-art object detection algorithms.
 
