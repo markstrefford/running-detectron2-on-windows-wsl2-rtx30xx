@@ -58,7 +58,7 @@ If you've got this far, then Detectron2 is installed and ready for you to use.
 
 Detectron2, at the time of writing, does not have a native API. This is simple to setup using [Flask](https://pypi.org/project/Flask/). You can of course `import detectron2` into your code directly, but if you want to move to an API based approach, here's an example of how to get this working.
 
-*Optional* If you want to run Anaconda in Windows and call Detectron2 in Ubuntu, then you'll need to get the internal IP address of your Ubuntu container using `ipconfig`. On my system, I used the IP address of the `eth0` adapter, which was of the format `172.x.x.x`. 
+*Optional* If you want to run Anaconda in Windows and call Detectron2 in Ubuntu, then you'll need to get the internal IP address of your Ubuntu container using `ipconfig`. On my system, I used the IP address of the `eth0` adapter, which was of the format `172.x.x.x`. **Note this IP address can change between reboots**.
 
 I've provided an [example script](https://github.com/markstrefford/running-detectron2-on-windows-wsl2-rtx30xx/blob/main/web-api.py) to get you started. **Note that this isn't production ready, it's purely for development and test purposes. This example code isn't designe to handle multiple concurrent requests, etc.**
 
