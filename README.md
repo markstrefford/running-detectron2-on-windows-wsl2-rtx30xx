@@ -23,7 +23,7 @@ For this, we will install:
 
 Most of this information is available on the Microsoft and Nvidia websites, with some information buried in responses to issues on a number of forums, so for those of you wanting to do this, here's all the information in one place.
 
-** Note that for this tutorial, I'm assuming that you already have a good understanding of Windows, Linux and Python.**
+**Note that for this tutorial, I'm assuming that you already have a good understanding of Windows, Linux and Python.**
 
 ### Issues
 
