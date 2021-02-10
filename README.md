@@ -68,8 +68,8 @@ You'll notice that these scripts use the (Blosc library)[http://python-blosc.blo
 
 ### Additional useful resources
 
-(How to Run the New StyleGAN2 ADA for PyTorch on Windows without Docker with Ampere/30xx or 20xx)[https://www.youtube.com/watch?v=BCde68k6KXg].
-(Detectron2: The base basic end-to-end tutorial)[https://towardsdatascience.com/detectron2-the-basic-end-to-end-tutorial-5ac90e2f90e3]
+* (How to Run the New StyleGAN2 ADA for PyTorch on Windows without Docker with Ampere/30xx or 20xx)[https://www.youtube.com/watch?v=BCde68k6KXg].
+* (Detectron2: The base basic end-to-end tutorial)[https://towardsdatascience.com/detectron2-the-basic-end-to-end-tutorial-5ac90e2f90e3]
 
 ### Acknowledgements
 
