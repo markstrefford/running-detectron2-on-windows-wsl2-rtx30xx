@@ -58,3 +58,8 @@ If you've got this far, then Detectron2 is installed and ready for you to use.
 
 Detectron2, at the time of writing, does not have a native API. This is simple to setup using (Flask)[https://pypi.org/project/Flask/].
 
+I've provided an (example script)[https://github.com/markstrefford/running-detectron2-on-windows-wsl2-rtx30xx/blob/main/web-api.py] to get you started. **Note that this isn't production ready, it's purely for development and test purposes. This example code isn't designe to handle multiple concurrent requests, etc.**
+
+To call the API, please see this notebook.
+
+You'll notice that these scripts use the (Blosc library)[http://python-blosc.blosc.org/]. This is to facilitate transfering binary (image) data over HTTP inside a JSON request/response.
