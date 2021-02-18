@@ -1,4 +1,4 @@
-# How to run Detectron2 on Windows using WSL2, CUDA 11.2 and Nvidia RTX30xx GPUs.
+# How to run Detectron2 on Windows 10 CUDA 11.2 and Nvidia RTX30xx GPUs.
 
 Facebook AI Research recently released [Detectron2](https://github.com/facebookresearch/detectron2), their next generation software system that implements state-of-the-art object detection algorithms.
 
@@ -25,6 +25,11 @@ Most of this information is available on the Microsoft and Nvidia websites, with
 
 **Note that for this tutorial, I'm assuming that you already have a good understanding of Windows, Linux and Python.**
 
+There are now 2 approches for installing below:
+
+1. [An in-depth manual approach using Windows 10, WSL2, and Ubuntu 20.04 LTS](#Windows 10, WSL2, Ubuntu 20.04 LTS)
+2. [Directly with Windows 10 and Anaconda](#Conda, Windows 10)
+
 ### Issues
 
 If you have any issues with this, or over time the instructions change, please raise an issue stating the following:
@@ -33,7 +38,7 @@ If you have any issues with this, or over time the instructions change, please r
 * What the errors or issues you experienced are
 * Any fixes you've tried or implemented
 
-### High level steps
+### Windows 10, WSL2, Ubuntu 20.04 LTS
 
 1. Make sure that you backup your PC first. Some of these changes can be breaking (for example, after this I found that some games didn't work).
 1. Join the Windows Insider Program, download and install the latest development release of Windows 10 and configure WSL2 (see https://docs.microsoft.com/en-us/windows/win32/direct3d12/gpu-cuda-in-wsl). I've tested with [Ubuntu 20.04LTS](https://www.microsoft.com/en-gb/p/ubuntu-2004-lts/9n6svws3rx71?rtc=1#activetab=pivot:overviewtab), feel free to try others Linux distributions if you want. **Note, for those of you with RTX cards (including RTX30xx GPUs), you need to install the GeForce driver from https://developer.nvidia.com/cuda/wsl/download.** For this step, you'll need to create an NVidia developers account.
@@ -65,6 +70,13 @@ I've provided an [example script](https://github.com/markstrefford/running-detec
 To call the API, please see this notebook. For information on the output format of the API, please read the [Detectron2 documentation](https://detectron2.readthedocs.io/en/latest/tutorials/models.html).
 
 You'll notice that these scripts use the [Blosc library](http://python-blosc.blosc.org/). This is to facilitate transfering binary (image) data over HTTP inside a JSON request/response.
+
+### Conda, Windows 10
+
+A conda YML file for install directly into Conda on Windows can be found here:
+
+https://github.com/facebookresearch/detectron2/issues/9#issuecomment-781301784
+
 
 ### Additional useful resources
 
