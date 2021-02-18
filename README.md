@@ -27,7 +27,7 @@ Most of this information is available on the Microsoft and Nvidia websites, with
 
 There are now 2 approches for installing below:
 
-1. [An in-depth manual approach using Windows 10, WSL2, and Ubuntu 20.04 LTS](#windows-10-wsl2-ubuntu-20.04-lts)
+1. [An in-depth manual approach using Windows 10, WSL2, and Ubuntu 20.04 LTS](##windows-10-wsl2-ubuntu-2004-lts)
 2. [Directly with Windows 10 and Anaconda](#Conda, Windows 10)
 
 ### Issues
