@@ -73,7 +73,9 @@ To call the API, please see this notebook. For information on the output format 
 
 You'll notice that these scripts use the [Blosc library](http://python-blosc.blosc.org/). This is to facilitate transfering binary (image) data over HTTP inside a JSON request/response.
 
-### Conda, Windows 10
+### Conda, Windows 10 
+
+Note that you will need Cuda 11.2 or later and Visual Studio 2017-2019 (Inclusive)
 
 A conda YML file for install directly into Conda on Windows can be found here:
 
