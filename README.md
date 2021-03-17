@@ -40,7 +40,9 @@ If you have any issues with this, or over time the instructions change, please r
 * What the errors or issues you experienced are
 * Any fixes you've tried or implemented
 
-### Windows 10, WSL2, Ubuntu 20.04 LTS
+### Windows 10, WSL2, Ubuntu 20.04 LTS 
+
+#### NOTE: Currently the WSL2 CUDA drivers aren't available on the NVIDIA site (17th March 2021) so please check before progressing with this section.
 
 1. Make sure that you backup your PC first. Some of these changes can be breaking (for example, after this I found that some games didn't work).
 1. Join the Windows Insider Program, download and install the latest development release of Windows 10 and configure WSL2 (see https://docs.microsoft.com/en-us/windows/win32/direct3d12/gpu-cuda-in-wsl). I've tested with [Ubuntu 20.04LTS](https://www.microsoft.com/en-gb/p/ubuntu-2004-lts/9n6svws3rx71?rtc=1#activetab=pivot:overviewtab), feel free to try others Linux distributions if you want. **Note, for those of you with RTX cards (including RTX30xx GPUs), you need to install the GeForce driver from https://developer.nvidia.com/cuda/wsl/download.** For this step, you'll need to create an NVidia developers account.
